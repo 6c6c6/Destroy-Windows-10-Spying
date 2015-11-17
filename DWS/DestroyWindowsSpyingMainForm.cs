@@ -228,6 +228,11 @@ namespace DWS_Lite
                 _rm = zh_CN.ResourceManager;
                 comboBoxLanguageSelect.Text = @"zh-CN | 中文(简体)";
             }
+            else if (currentlang.IndexOf("uk", StringComparison.Ordinal) > -1)
+            {
+                _rm = uk_UA.ResourceManager;
+                comboBoxLanguageSelect.Text = @"uk-UA | Українська";
+            }
             else
             {
                 _rm = en_US.ResourceManager;
@@ -1285,6 +1290,11 @@ namespace DWS_Lite
             else if (comboBoxLanguageSelect.Text.Split('|')[0].Replace(" ", "") == "zh-CN")
             {
                 _rm = zh_CN.ResourceManager;
+                ChangeLanguage();
+            }
+            else if (comboBoxLanguageSelect.Text.Split('|')[0].Replace(" ", "") == "uk-UK")
+            {
+                _rm = uk_UA.ResourceManager;
                 ChangeLanguage();
             }
             else

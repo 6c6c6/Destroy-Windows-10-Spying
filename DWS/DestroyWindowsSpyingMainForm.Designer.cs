@@ -756,6 +756,7 @@ namespace DWS_Lite
             "pl-PL | Polish",
             "pt-BR | Portuguese",
             "ru-RU | Русский",
+            "uk-UA | Українська",
             "zh-CN | 中文(简体)"});
             this.comboBoxLanguageSelect.Location = new System.Drawing.Point(6, 20);
             this.comboBoxLanguageSelect.Name = "comboBoxLanguageSelect";
